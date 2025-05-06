@@ -1,0 +1,17 @@
+h1{
+  color: white;
+  text-align: center;
+}
+body{
+  background-color: blueviolet;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.container div{
+  color:white;
+  width: 200px;
+  margin:10px;
+}

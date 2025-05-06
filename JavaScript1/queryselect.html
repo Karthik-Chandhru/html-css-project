@@ -1,0 +1,23 @@
+<h1 class="one">One</h1>
+<h1 class="one">Two</h1>
+<h1 class="one">Three</h1>
+
+<script>
+    var num=document.querySelectorAll(".one")
+    for(count=0;count<num.length();count++){
+        console.log(num[count].textContent)
+    }
+    
+</script>
+<hr>
+<h1>Using insertAdjustElements</h1>
+<div style="background-color: aqua;">
+    <h1>ONE</h1>
+    <h1>TWO</h1>
+</div>
+<script>
+    var div=document.querySelector("div")
+    var h1=document.createElement("h1")
+    h1.textContent="THREE"
+    div.insertAdjacentElement("afterend",h1)
+</script>

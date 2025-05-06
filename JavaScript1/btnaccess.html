@@ -1,0 +1,73 @@
+<p>Your Name is:</p><h1 id="name">Name</h1>
+<button onclick="Update(event)">John</button>
+<button onclick="Update(event)">Karthi</button>
+<button onclick="Update(event)">Praveen</button>
+<script>
+    var h1=document.getElementById("name")
+    function Update(){
+        h1.textContent=event.target.textContent
+        h1.style.backgroundColor="red"
+    }
+</script>
+<hr>
+<h1>Delete an Element</h1>
+<h3 onclick="delte(event)">One</>
+<h3 onclick="delte(event)">Two</h3>
+<h3 onclick="delte(event)">Three</h>
+<h3 onclick="delte(event)">Four</h3>
+<h3 onclick="delte(event)">Five</h>
+<h3 onclick="delte(event)">Six</h3>
+
+<script>
+    function delte(event){
+     event.target.remove()
+    }
+</script>
+<hr>
+<h1>Button color Access</h1>
+<button id="btn" onclick="update()">Click Me</button>
+<script>
+    var btn=document.getElementById("btn")
+    function update(){
+        btn.style.backgroundColor="red"
+
+    }
+</script>
+<hr>
+<h1>Creating ElementsUpto Add Button</h1>
+<button onclick="updae()">ADD</button>
+<div id="input">
+
+</div>
+<script>
+    var inp=document.getElementById("input")
+    function updae()
+    {
+        var items=document.createElement("h1")
+        items.textContent="Hello"
+        inp.append(items)
+    }
+</script> 
+<hr>
+<h1>Change text after click</h1>
+<h1 id="title1">Hello World</h1>
+<button onclick="clic()">Change</button>
+<script>
+    var par=document.getElementById("title1")
+    console.log(par.textContent)
+
+    function clic()
+    {
+    par.textContent="Bye World"
+    }
+    
+</script>
+
+<p id="title">Hello</p>
+<button onclick="change()">Change</button>
+<script>
+    function change(){
+    var word=document.getElementById("title").textContent="Bye";
+    }
+</script>
+<hr>

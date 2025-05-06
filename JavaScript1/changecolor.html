@@ -1,0 +1,21 @@
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+    .widt{
+        width: 900px;
+        height:500px;
+        transition: 10s;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()">Change</button>
+<script>
+    var box=document.getElementById("box")
+    function change(){
+        box.style.backgroundColor="red"
+        box.setAttribute("class","widt")
+    }
+</script>

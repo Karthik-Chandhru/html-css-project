@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-style: oblique;">
+     <!--Navbar-->
+     <nav class="navbar">
+        <h1>Candy'S Kart</h1>
+
+        <div class="navbar-links">
+           <p class="navbar-link"><a href="index.html">Home</a></p>
+           <p class="navbar-link"><a href="collections.html">Collections</a></p>
+           <p class="navbar-link"><a href="">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+     </nav>
+
+     <!--Side NAvbar-->
+     <div class="side-navbar">
+        <p style="text-align: right; color: white;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="">Contact</a></p>
+         </div>
+     </div>
+
+     <!--Collections-->
+     <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="products" id="products">
+
+            <div class="product-box">
+                <img src="whiteshirt.jpg" alt="">
+                <p>White Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="redshirt.jpg" alt="">
+                <p>Red Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="blueshirt.jpg" alt="">
+                <p>Blue Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="blackshirt.jpg" alt="">
+                <p>Black Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="whiteshirt.jpg" alt="">
+                <p>White Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="redshirt.jpg" alt="">
+                <p>Red Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="blueshirt.jpg" alt="">
+                <p>Blue Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="blackshirt.jpg" alt="">
+                <p>Black Shirt</p>
+            </div>
+        </div>
+     </div>
+
+
+
+     <!--Footer-->
+     <div class="footer">
+        <div class="footer-container">
+                <h2>Candy'S Kart</h2>
+                <p>218,KamalaNagar,Karungalpalayam,Erode-638003</p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-instagram" style="color: beige;"></i>
+                    <i class="fa-brands fa-facebook" style="color: beige;"></i>
+                    <i class="fa-brands fa-whatsapp" style="color: beige;"></i>
+                    <i class="fa-brands fa-twitter" style="color: beige;"></i>
+                </div>
+                
+     <p>@2025 Candy'S Kart</p>
+        </div>
+    </div>
+   
+     <script src="collection.js"></script>
+</body>
+</html>
